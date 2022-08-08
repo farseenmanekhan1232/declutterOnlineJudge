@@ -6,6 +6,8 @@ function reddenPage() {
 
   document.getElementById("col3").style["margin-right"] = "0";
   document.getElementById("col3").style["margin-left"] = "0";
+document.getElementById("col3_content_wrapper").querySelector("iframe").style["height"]="100vh";
+
 }
 
 chrome.action.onClicked.addListener((tab) => {
