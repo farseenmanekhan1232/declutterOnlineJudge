@@ -4,10 +4,10 @@ function reddenPage() {
     document.getElementById("col1").style["display"] = "block";
     document.getElementById("col2").style["display"] = "block";
     document.getElementById("header").style["display"] = "block";
-    document.getElementById("page_margins").style["max-width"] = "80em";
+    document.getElementById("page_margins").style["max-width"] = "90em";
 
-    document.getElementById("col3").style["margin-right"] = "20%";
-    document.getElementById("col3").style["margin-left"] = "20%";
+    document.getElementById("col3").style["margin-right"] = "22.5%";
+    document.getElementById("col3").style["margin-left"] = "22.5%";
     document
       .getElementById("col3_content_wrapper")
       .querySelector("iframe").style["height"] = "80vh";

@@ -3,7 +3,7 @@
   "action": {},
   "manifest_version": 3,
   "version": "0.1",
-  "description": "clutter free onlinejudge",
+  "description": "Clutter Free Onlinejudge",
   "permissions": ["activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
