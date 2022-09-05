@@ -1,17 +1,5 @@
 function reddenPage() {
-  if (window.sessionStorage.getItem("declutterOnlineJudge") == "no") {
-    window.sessionStorage.setItem("declutterOnlineJudge", "yes");
-    document.getElementById("col1").style["display"] = "none";
-    document.getElementById("col2").style["display"] = "none";
-    document.getElementById("header").style["display"] = "none";
-    document.getElementById("page_margins").style["max-width"] = "123em";
-
-    document.getElementById("col3").style["margin-right"] = "0";
-    document.getElementById("col3").style["margin-left"] = "0";
-    document
-      .getElementById("col3_content_wrapper")
-      .querySelector("iframe").style["height"] = "100vh";
-  } else {
+  if (window.sessionStorage.getItem("declutterOnlineJudge") == "yes") {
     window.sessionStorage.setItem("declutterOnlineJudge", "no");
     document.getElementById("col1").style["display"] = "block";
     document.getElementById("col2").style["display"] = "block";
@@ -23,6 +11,18 @@ function reddenPage() {
     document
       .getElementById("col3_content_wrapper")
       .querySelector("iframe").style["height"] = "80vh";
+  } else {
+    window.sessionStorage.setItem("declutterOnlineJudge", "yes");
+    document.getElementById("col1").style["display"] = "none";
+    document.getElementById("col2").style["display"] = "none";
+    document.getElementById("header").style["display"] = "none";
+    document.getElementById("page_margins").style["max-width"] = "123em";
+
+    document.getElementById("col3").style["margin-right"] = "0";
+    document.getElementById("col3").style["margin-left"] = "0";
+    document
+      .getElementById("col3_content_wrapper")
+      .querySelector("iframe").style["height"] = "100vh";
   }
 }
 
